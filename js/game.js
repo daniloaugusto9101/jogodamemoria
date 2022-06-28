@@ -1,5 +1,6 @@
 const grid = document.querySelector(".grid");
 
+
 const characters = [
     "beth",
     "jerry",
@@ -12,6 +13,11 @@ const characters = [
     "scroopy",
     "summer"
 ];
+
+const virarCarta = ({target}) =>{
+    const card = target.parentNode;
+    card.classList.add("revelar-carta");
+}
 
 const createElement = (tag, className) =>{
     const element = document.createElement(tag);
@@ -27,8 +33,11 @@ const createCard = (character) =>{
 
     front.style.backgroundImage = `url(../images/${character}.png)`;
     
+
     card.appendChild(front);
     card.appendChild(back);
+
+    card.addEventListener("click", virarCarta);
 
     return card;
 }
