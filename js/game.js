@@ -34,10 +34,16 @@ const createCard = (character) =>{
 }
 
 const loadGame = () => {
-    characters.forEach((character)=>{
+
+    
+
+    const duplicateArray = [...characters, ...characters ];
+
+    const embaralharArray = duplicateArray.sort(()=> Math.random() - 0.5); 
+
+    duplicateArray.forEach((character)=>{
         const card = createCard(character); 
-        grid.appendChild(card);
-        // console.log(character);        
+        grid.appendChild(card);  
     })
 };
 

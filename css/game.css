@@ -11,7 +11,7 @@
     aspect-ratio: 3/4;
     width: 100%;
     background: gray;
-    transition: all 400ms ease; 
+    transition: all 800ms ease; 
     transform-style: preserve-3d;
     border-radius: 8px;
     border: 2px solid var(--sixth-color);
