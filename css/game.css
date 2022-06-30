@@ -24,6 +24,7 @@
     background-position: center;
     background-size: cover;
     border-radius: 8px;
+    transition: all 400ms ease;
 }
 
 .front{
@@ -38,4 +39,9 @@
 
 .revelar-carta{
     transform: rotateY(180deg);
+}
+
+.card-inativo{
+    filter: saturate(0);
+    opacity: 0.5;
 }
